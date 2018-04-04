@@ -1,0 +1,122 @@
+body{background-color: rgb(250,255,240);}
+
+div.addExplain{padding-left: 20px;}
+
+p.expSheetID {padding-left: 20px; color:rgb(240,80,70); }
+p.expSheetIDEn {padding-left: 30px; color:rgb(240,80,70);}
+p.expSheetIDExplain{padding-left: 30px; color:rgb(70,100,240);}
+span.expCurReSh{padding-left: 20px;}
+#currentSheetID {position: relative; left:30px; top:10px;}
+#recordSheetID {position: relative; left:30px; top:10px;}
+#sheetIDSave {position: relative; left:30px; top:10px;}
+span.expNewRecSh {padding-left: 50px;}
+span.expCurShSettingEn {padding-left: 25px; font-size:11px;}
+span.expNewShSetEn {padding-left:220px; font-size:11px;}
+
+#accountInfo {position: relative; left:50px; top:10px;}
+span.expUserAuthStatus{padding-left: 20px;}
+span.expUserAuthStatusEn {padding-left: 60px; font-size:12px;}
+span.expRecorderList {padding-left: 20px;}
+#recorderList {position: relative; left:10px; top:10px;}
+#newRecorder {position: relative; left:10px; top:10px;}
+#recorderSave {position: relative; left:10px; top:10px;}
+span.expRecoder {padding-left: 20px;}
+span.expRecorderListEn {padding-left: 30px;}
+span.expEnterRecorderEn {padding-left: 100px;}
+
+#getWorkSheet {position: relative; left:20px;}
+span.expWsCatLink{padding-left: 20px;}
+span.expCatName {padding-left: 20px;}
+#workSheetList {position: relative; left:10px; top:10px;}
+#categoryName {position: relative; left:10px; top:10px;}
+#linkWsCategory {position: relative; left:10px; top:10px;}
+span.expWsList {padding-left: 20px;}
+span.expWsListEn {padding-left: 30px;}
+span.expCatName {padding-left: 20px;}
+span.expCatNameEn {padding-left: 80px;}
+
+/*Setting Button*/
+#sheetIDSave{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#sheetIDSave:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}
+
+#userAuthBtn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#userAuthBtn:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}
+
+#recorderSave{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#recorderSave:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}
+
+#getWorkSheet{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#getWorkSheet:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}
+
+#linkWsCategory{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#linkWsCategory:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}

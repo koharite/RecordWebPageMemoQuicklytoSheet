@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Setting: Record Page Memo Quickly to Sheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 後でBootstrapなどのCSS設定を確認 -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/font-awesome.min.css" rel="stylesheet">
+
+  <script src ="./js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="./css/option.css" type="text/css">
+
+</head>
+
+<body>
+  <div class="addExplain">
+    この拡張機能では、Webページで選択していたテキストがMemo欄にコピーされます。<br>
+    Selected text on web page copy to Memo Section in this extension.
+  </div>
+
+  <div class="container">
+    <h1 style="padding-top:10px">Setting Page: Record Page Memo Quickly to Sheet</h1>
+
+    <div style="padding-top:10px">
+      <!--<h2>Enter recording spreadsheet ID</h2>-->
+      <h3>1. 記録先シート設定 : Setting for record sheet</h3>
+      <form id="sheetEntry" role="form" class="form-inline">
+        <p class="expSheetIDExplain">
+          Please create your Spread Sheets on ahead.<br>
+          Your Spread Sheet URL is like below, Spread Sheets ID is [spreadSheetId] part.<br>
+          https://docs.google.com/spreadsheets/d/[speadSheetId]/edit#gid=0
+        </p>
+        <p class="expSheetID">
+          a. 記録先Google Spread Sheets IDの入力(必須)
+        </p>
+        <p class="expSheetIDEn">
+          Enter Google Spread Sheets ID for record (nessesary)
+        </p>
+
+        <span class="expCurReSh">
+          現在の記録シートID
+        </span>
+        <input type="text" readonly="readonly" id="currentSheetID">
+        <span class="expNewRecSh">
+          保存先に指定するシートID
+        </span>
+        <input type="text" id="recordSheetID">
+        <button type='submit' id="sheetIDSave">Set</button>
+      </form>
+
+      <form id="sheetEntryEn" role="form" class="form-inline">
+        <span class="expCurShSettingEn">
+          Current setted record sheet ID
+        </span>
+        <span class="expNewShSetEn">
+          Enter new record sheet ID you want.
+        </span>
+      </form>
+
+
+    </div>
+
+    <div id="setter" style="padding-top:20px">
+      <h3>2. ユーザー認証 : User Authentication</h3>
+      <button type="submit" id="userAuthBtn">Authenticate User</button>
+      <form id="accountForm" role="form" class="form-inline">
+        <sapn class="expUserAuthStatus">
+          ユーザー認証状況
+        </span>
+        <input type="text" id ="accountInfo" disabled="disabled" value="not autheticate"><br>
+        <sapn class="expUserAuthStatusEn">
+          User authetication status
+        </span>
+      </form>
+
+      <p id ="comp"></p>
+    </div>
+
+    <div style="padding-top:20px">
+      <h3>3. 表示項目の設定 : Setting for App Menu</h3>
+      <form id="recorderEntry" role="form" class="form-inline">
+        <span class="expRecorderList">
+          a.記録者リスト
+        </span>
+        <select id="recorderList" class="form-control">
+        </select>
+        <span class = "expRecoder">
+          記録者を入力してください
+        </span>
+        <input type="text" id="newRecorder">
+        <button type='submit' id="recorderSave">Add</button>
+      </form>
+      <form id="recorderEntryEn" role="form" class="form-inline">
+        <span class = "expRecorderListEn">
+          Recorder list
+        </span>
+        <span class = "expEnterRecorderEn">
+          Enter new recorder
+        </span>
+      </form>
+    </div>
+
+    <div style="padding-top:20px">
+      <span class="expWsCatLink">
+        b. ワークシートとカテゴリ名の対応 : Link worksheet name and category name<br>
+      </span>
+      <button type='submit' id="getWorkSheet">Get workSheet Info.</button>
+      <form id="workSheetEntry" role="form" class="form-inline">
+        <span class = "expWsList">
+          ワークシート名リスト
+        </span>
+        <select id="workSheetList" class="form-control">
+          <!--<option value = "0">None : シート1</option>-->
+        </select>
+        <span class = "expCatName">
+          対応するカテゴリ名
+        </span>
+        <input type="text" id="categoryName"　disabled="disabled">
+        <button type = "submit" id="linkWsCategory">Link</button>
+      </form>
+      <form id="workSheetEntryEn" role="form" class="form-inline">
+        <span class = "expWsListEn">
+          worksheet name list
+        </span>
+        <span class = "expCatNameEn">
+          Linking Category Name
+        </span>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="./js/options.js"></script>
+
+</body>
+
+</html>

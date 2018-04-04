@@ -1,0 +1,49 @@
+body{background-color: rgb(250,255,240);}
+
+#webTitleArea {margin-top:5px; margin-left:5px;}
+#webTitle {width:500px;}
+#webURLArea {margin-top:5px; margin-left:30px;}
+#webURL {width:500px;}
+#categoryArea {margin-top:5px; margin-left:15px;}
+#importanceArea {margin-top:5px;}
+span.expOptInfo {margin-left:50px;}
+#memoArea {margin-top:5px; margin-left:10px;}
+#daterecorderArea {margin-top:5px;}
+#recorderArea {margin-left:20px;}
+#buttonArea {margin-top:10px; margin-left:50px;}
+#resetBtnArea {margin-left:20px;}
+
+/*Setting Button*/
+#sendSheet{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#sendSheet:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}
+
+#resetBtn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #5480d8;
+    color: #FFF;
+    border-bottom: solid 3px #647391;
+    border-radius: 5px;
+}
+#resetBtn:active {/*When put the button*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*move under*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*shrink shadow*/
+    border-bottom: none;
+}

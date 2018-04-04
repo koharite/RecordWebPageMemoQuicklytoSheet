@@ -1,0 +1,45 @@
+{
+  "name": "Record Page Memo Quickly to Sheet",
+  "version":"0.9.0",
+  "short_name":"PageMemo2Sheet",
+  "description":"Record viewing Web page memo quickly to Google Spread Sheet",
+
+  "browser_action":{
+    "default_popup":"popup.html"
+  },
+  "options_page":"options.html",
+  "background":{
+    "scripts":["js/background.js"],
+    "persistent": false
+  },
+
+
+  "icons":{
+    "128": "icons/128.png",
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "19": "icons/19.png",
+    "38": "icons/38.png"
+  },
+
+  "manifest_version": 2,
+  "minimum_chrome_version": "29",
+
+  "permissions":["tabs", "contextMenus", "identity", "storage",
+    "http://*/*", "https://*/*"],
+
+  "oauth2": {
+    "client_id": "828149396757-9e0embvs7m7kvf9l8hdaede4kb2mvnvs.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/spreadsheets",
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/drive.file"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/content.js"]
+    }
+  ]
+
+}

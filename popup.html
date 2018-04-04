@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+  <meta charset = "utf-8">
+
+  <script src ="./js/jquery-3.2.1.min.js"></script>
+  <script src ="./js/popup.js"></script>
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/popup.css" type="text/css">
+
+</head>
+
+
+<body style ="min-width;400px">
+  <form id = "recordform">
+    <div id="webTitleArea">
+      <tr>
+        <td align = "right"> Web title: </td>
+        <td> <input id ="webTitle" type = "text" size = "40"> </td>
+      </tr>
+    </div>
+    <!-- <div id = "title"></div> -->
+
+    <div id="webURLArea">
+      <tr>
+        <td align = "right"> URL:</td>
+        <td> <input id = "webURL" type = "text" size = "40"> </td>
+      </tr>
+      <!-- <div id = "url"></div> -->
+    </div>
+
+    <div id="categoryArea">
+      <tr>
+        <td align = "right"> Category: </td>
+        <td>
+          <select id ="infoCategory" size = "1">
+          </select>
+        </td>
+      </tr>
+    </div>
+
+    <div id="importanceArea">
+      <tr>
+        <td align = "right"> Importance: </td>
+        <td>
+          <select id ="infoRank" size = "1">
+            <option value = "S"> S </option>
+            <option value = "A"> A </option>
+            <option value = "B" selected> B </option>
+            <option value = "C"> C </option>
+          </select>
+        </td>
+        <span class ="expOptInfo">
+          <td align = "right"> Optional Info:</td>
+          <td><input id="optionalInfo" type = "text" size = "10"></td>
+        </span>
+      </tr>
+    </div>
+
+    <div id="memoArea">
+      <tr>
+        <td align ="right">Memo</td>
+        <td>
+          <textarea id = "memo" rows="6" cols="100"></textarea>
+        </td>
+      </tr>
+    </div>
+
+    <div id="dateRecorderArea">
+      <tr>
+        <td align = "right">Date:</td>
+        <td>
+          <input id = "recordDate" type = "date"  size = "40">
+        </td>
+
+        <span id = "recorderArea">
+          <td align ="right">recorder:</td>
+          <td>
+            <select id = "recorder" size = "1">
+            </select>
+          </td>
+        </span>
+      </tr>
+    </div>
+
+    <div id ="buttonArea">
+      <tr>
+        <td>
+          <span id="sendBtnArea">
+            <button type ="submit" id ="sendSheet">Send</button>
+          </span>
+          <span id="resetBtnArea">
+            <button type = "reset" id ="resetBtn">Cancel</button>
+          </span>
+        </td>
+      </tr>
+    </div>
+
+  </form>
+
+</body>
+</html>
